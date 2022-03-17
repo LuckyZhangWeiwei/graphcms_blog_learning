@@ -22,13 +22,14 @@ function PostWidget({ categories, slug }) {
         {slug ? 'Related Posts' : 'Recent Posts'}
       </h3>
       {relatedPosts.map((post) => (
-        <div key={post.title} className="flex w-full items-center">
+        <div key={post.title} className="flex w-full items-center pt-3">
           <div className="w-16 flex-none">
             <img
               src={post.featuredImage.url}
               alt={post.title}
-              height="60px"
-              width="60px"
+              style={{ height: '60px', width: '60px' }}
+              // height="60px"
+              // width="60px"
               className="rounded-full align-middle"
             />
           </div>
