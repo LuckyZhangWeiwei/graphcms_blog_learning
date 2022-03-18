@@ -28,8 +28,6 @@ function PostWidget({ categories, slug }) {
               src={post.featuredImage.url}
               alt={post.title}
               style={{ height: '60px', width: '60px' }}
-              // height="60px"
-              // width="60px"
               className="rounded-full align-middle"
             />
           </div>
