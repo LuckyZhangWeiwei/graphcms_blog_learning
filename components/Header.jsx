@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
+// import { useRouter } from 'next/router'
 import { getCategories } from '../services'
 
 const Header = () => {
+  // const { asPath, pathname } = useRouter()
+  // console.log(asPath, pathname)
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
